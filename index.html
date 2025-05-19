@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <!--Fontawesome Fonts-->
+  <script src="https://kit.fontawesome.com/4a9991734d.js" crossorigin="anonymous"></script>
+
+  <title>TeamSpark - Remote Collaboration Made Easy</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">TeamSpark</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-image">
+        <img src="assets/images/daniel-korpai-Y3LGWCsrgmg-unsplash.jpg" alt="Team collaboration illustration">
+      </div>
+      <div class="filter"></div>
+      <div class="hero-text">
+        <h2>Unite Your Remote Team</h2>
+        <p>TeamSpark helps remote teams collaborate and build better products together.</p>
+        <a href="#contact" class="btn">Try it for Free</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrapper">
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="feature">
+          <i class="fa-solid fa-headset" style="color: #1e3a8a;"></i>
+          <h3>Real-Time Chat</h3>
+          <p>Communicate instantly with your team no matter where they are.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-bars-progress" style="color: #1e3a8a;"></i>
+          <h3>Project Boards</h3>
+          <p>Organize tasks and track progress with easy-to-use boards.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-video" style="color: #1e3a8a;"></i>
+          <h3>Video Meetings</h3>
+          <p>Host secure video calls with your entire team, with one click.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+      <div class="container">
+        <h2>Meet the Team</h2>
+        <div class="team-grid">
+          <!-- Repeat this block for each team member -->
+          <div class="team-member">
+            <img src="assets/images/Jane Doe.jpg" alt="Team Member">
+            <h4>Jane Doe</h4>
+            <p>Product Designer</p>
+            <div class="socials">
+              <a href="#">LinkedIn</a> |
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/Becky Smith.jpg" alt="Team Member">
+            <h4>Becky Smith</h4>
+            <p>Analyst</p>
+            <div class="socials">
+              <a href="#">LinkedIn</a> |
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/james bond.jpg" alt="Team Member">
+            <h4>James Bond</h4>
+            <p>UI/UX Developer</p>
+            <div class="socials">
+              <a href="#">LinkedIn</a> |
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/John Smith.jpg" alt="Team Member">
+            <h4>John Smith</h4>
+            <p>Frontend Developer</p>
+            <div class="socials">
+              <a href="#">LinkedIn</a> |
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+          <!-- Add more team members as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Spark Collaboration?</h2>
+        <a href="#contact" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="links">
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="social-links">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <p>&copy; 2025 TeamSpark. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script>
+  var header = document.querySelector('.header');
+  
+  function QueryShadow() {
+    if (window.scrollY > 40){
+      header.classList.add('shadow');
+    }
+    else {
+      header.classList.remove('shadow');
+    }
+  }
+
+  window.addEventListener('scroll', QueryShadow);
+</script>
+
+</html>
