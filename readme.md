@@ -1,6 +1,6 @@
 # TeamSpark Landing Page 🚀
 
-![Preview](assets/images/TeamSpark%20Website.png)
+![Preview](./assets/images/TeamSpark%20Website.png "Preview")
 
 A responsive landing page built for the fictional remote team collaboration app **TeamSpark**. This project is inspired by Frontend Mentor's "Meet Landing Page" challenge.
 

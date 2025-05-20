@@ -23,8 +23,13 @@
   <header class="header">
     <div class="container">
       <h1 class="logo">TeamSpark</h1>
-      <nav class="nav">
+      <div class="toggle-menu">
+        <i class="fa-solid fa-bars" aria-hidden="false"></i>
+        <i class="fa-solid fa-xmark close-icon" aria-hidden="false"></i>
+      </div>
+      <nav class="nav close-menu">
         <ul>
+          <li><span>TeamSpark Labs&copy</span></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -150,7 +155,6 @@
 
 <script>
   var header = document.querySelector('.header');
-  
   function QueryShadow() {
     if (window.scrollY > 40){
       header.classList.add('shadow');
@@ -159,8 +163,27 @@
       header.classList.remove('shadow');
     }
   }
-
   window.addEventListener('scroll', QueryShadow);
+
+  var menuBtn = document.querySelector('.toggle-menu');
+  var hurmburgerIcon = document.querySelector('.fa-bars');
+  var closeIcon = document.querySelector('.fa-xmark');
+  var nav = document.querySelector('nav')
+  function ToggleMenu(e) {
+    if (e.target.classList.contains('fa-bars')) {
+      e.target.classList.add('close-icon');
+      closeIcon.classList.remove('close-icon');
+      nav.classList.remove('close-menu');
+      console.log('hey');
+    }
+    else {
+      e.target.classList.add('close-icon');
+      hurmburgerIcon.classList.remove('close-icon');
+      nav.classList.add('close-menu')
+      console.log('bye');
+    }
+  }
+  menuBtn.addEventListener('click', ToggleMenu)
 </script>
 
 </html>
