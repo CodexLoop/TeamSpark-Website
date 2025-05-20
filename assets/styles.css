@@ -223,11 +223,6 @@ header li:first-child span::after {
     grid-auto-rows: auto;
     margin: auto;
 }
-.team .team-grid {
-    
-    margin: auto;
-    /* Don't forget to remove this if it worked! */
-}
 
 .team .team-member {
     display: grid;
