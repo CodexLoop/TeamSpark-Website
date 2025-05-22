@@ -140,15 +140,17 @@ header li:first-child span::after {
 .hero .container {
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
     height: 400px;
     width: 100%;
-    justify-content: space-between;
     padding-block: initial;
 }
 
 .hero .hero-image {
+    position: absolute;
+    top: 0;    
     width: 100%;
+    height: 100%;
 }
 
 .hero .hero-image img {
@@ -165,16 +167,14 @@ header li:first-child span::after {
 }
 
 .hero .hero-text {
-    position: relative;
-    align-self: flex-start;
-    top: 3rem;
-    left: 10%;
-    flex: 0 0 260px;
-    padding-block: 1rem;
+    flex-basis: 650px;
+    margin-top: 5%;
+    margin-left: 10%;
+    z-index: 1;
+    font-size: var(--font-subheading);
 }
-.hero p {
-    margin-block: var(--xs) var(--l);
-}
+.hero h2 {font-size: 50px;}
+.hero p {margin-block: var(--xs) var(--l);}
 
 /* FEATURES SECTION */
 .features {
@@ -186,7 +186,7 @@ header li:first-child span::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--l);
+    gap: var(--l) var(--h);
     text-align: center;
 }
 
@@ -219,7 +219,7 @@ header li:first-child span::after {
 .team .team-grid {
     display: grid;
     grid-gap: var(--l) var(--s);
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: auto;
     margin: auto;
 }
@@ -271,9 +271,8 @@ header li:first-child span::after {
     margin: auto;
 }
 
-
+.cta h2 {font-size: var(--font-subheading);}
 /* FOOTER */
-
 .footer {
     background-color: var(--text-dark);
     color: var(--white);
@@ -391,22 +390,21 @@ header li:first-child span::after {
         align-content: center;
         flex-wrap: wrap;
     }
-    .hero .hero-image {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        right: 0;
-    }
     .hero .filter {background-color: rgba(0, 0, 0, .7)}
     .hero .hero-text {
         position: initial;
+        flex: 0 0 260px;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         z-index: 1;        
+        font-size: initial;
+        margin: 0;
     }
+    .hero h2 {font-size: var(--font-h2);}
+
+
 
     /* CALL TO ACTION */
     .cta .container {
