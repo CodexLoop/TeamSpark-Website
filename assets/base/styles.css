@@ -68,8 +68,9 @@ html {
     box-sizing: inherit;
 }
 :focus {
-    outline: 2px solid var(--accent);
+    outline: 2px solid lightgreen;
     outline-offset: 4px;
+    background-color:lightgreen;
 }
 body {
     font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

@@ -6,14 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#1e3a8a">
-  <!--Google Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--Google Fonts-->  
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"></noscript>
 
   <!--Stylesheet-->
-  <link rel="stylesheet" href="assets/base/styles.css" />
+  <link rel="stylesheet" href="assets/base/styles.min.css" />
 
   <!--Fontawesome Fonts-->
-  <script src="https://kit.fontawesome.com/4a9991734d.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4a9991734d.js" crossorigin="anonymous" defer></script>
 
   <title>TeamSpark - Remote Collaboration Made Easy</title>
 </head>
@@ -43,7 +45,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-image">
-          <img src="assets/images/daniel-korpai-Y3LGWCsrgmg-unsplash.jpg" alt="Team collaboration illustration">
+          <img src="assets/images/daniel-korpai-Y3LGWCsrgmg-unsplash.jpg" alt="Team collaboration illustration" loading="lazy">
         </div>
         <div class="filter"></div>
         <div class="hero-text">
@@ -86,7 +88,7 @@
           <div class="team-grid">
             <!-- Repeat this block for each team member -->
             <div class="team-member">
-              <img src="assets/images/home-perfil.jpg" alt="Photo of Mnqobi Thusi, Project Manager">
+              <img src="assets/images/home-perfil.jpg" alt="Photo of Mnqobi Thusi, Project Manager" loading="lazy">
               <h4>Mnqobi Thusi</h4>
               <p>Project Manager</p>
               <div class="socials">
@@ -95,7 +97,7 @@
               </div>
             </div>
             <div class="team-member">
-              <img src="assets/images/Jane Doe.jpg" alt="Photo of Jane Doe, Product Designer">
+              <img src="assets/images/Jane Doe.jpg" alt="Photo of Jane Doe, Product Designer" loading="lazy">
               <h4>Jane Doe</h4>
               <p>Product Designer</p>
               <div class="socials">
@@ -104,7 +106,7 @@
               </div>
             </div>
             <div class="team-member">
-              <img src="assets/images/james bond.jpg" alt="Photo of James Bond, UI/UX Developer">
+              <img src="assets/images/james bond.jpg" alt="Photo of James Bond, UI/UX Developer" loading="lazy">
               <h4>James Bond</h4>
               <p>UI/UX Developer</p>
               <div class="socials">
@@ -113,7 +115,7 @@
               </div>
             </div>
             <div class="team-member">
-              <img src="assets/images/John Smith.jpg" alt="Photo of John Smith, SEO Specialist">
+              <img src="assets/images/John Smith.jpg" alt="Photo of John Smith, SEO Specialist" loading="lazy">
               <h4>John Smith</h4>
               <p>SEO Specialist</p>
               <div class="socials">
@@ -163,6 +165,8 @@
   </div>
   <a href="#features" class="skip-link">Skip to main content</a>
 </body>
-<script src="assets/js/source.js"></script>
+
+<!--JS File-->
+<script src="assets/js/source.min.js"></script>
 
 </html>
