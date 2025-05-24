@@ -29,29 +29,23 @@ const header = document.querySelector('.header');
 
 // Toggle menu btn
   const menuBtn = document.querySelector('.toggle-menu');
-  const hurmburgerIcon = document.querySelector('.fa-bars');
-  const closeIcon = document.querySelector('.fa-xmark');
+  const nav = document.querySelector('nav');
+  const icons = menuBtn.querySelectorAll('.menu-icon');
+  const navLinks = document.querySelectorAll("nav a");
 
-  const nav = document.querySelector('nav')
-  function ToggleMenu(e) {
-    if (e.target.classList.contains('fa-bars')) {
-      e.target.classList.add('close-icon');
-      closeIcon.classList.remove('close-icon');
-      nav.classList.remove('close-menu');
-      console.log('hey');
-    }
-    else {
-      e.target.classList.add('close-icon');
-      hurmburgerIcon.classList.remove('close-icon');
-      nav.classList.add('close-menu')
-      console.log('bye');
-    }
+  function ToggleMenu() {
+    nav.classList.toggle('close-menu');
+    icons.forEach(icon => {
+      icon.classList.toggle('close-icon');
+    });
   }
   menuBtn.addEventListener('click', ToggleMenu);
+  navLinks.forEach((link) => {
+    link.addEventListener('click', ToggleMenu);
+  });
 
 // Add active link state
   const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll("nav a");
 
   window.addEventListener("scroll", () => {
     let scrollY = window.pageYOffset;
