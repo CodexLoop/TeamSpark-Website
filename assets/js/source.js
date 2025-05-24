@@ -20,7 +20,7 @@ const header = document.querySelector('.header');
     animatedElements.forEach((el) => {
       const position = el.getBoundingClientRect().top;
 
-      if (position < windowHeight - 100) {
+      if (position < windowHeight - 50) {
         el.classList.add('visible');
       }
     });
