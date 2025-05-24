@@ -79,7 +79,7 @@ body {
     background-color: var(--white);
     color: var(--text-dark);
 }
-h1 {
+h1, .logo {
     font-size: var(--font-h1);
     font-weight: var(--weight-heading);
 }
@@ -132,7 +132,7 @@ header .container {
     padding-block: initial;
 }
 
-header h1 {
+header .logo {
     color: var(--accent);
     letter-spacing: -4px;
     cursor: pointer;
@@ -199,7 +199,7 @@ nav a[aria-current="true"] {
     z-index: 1;
     font-size: var(--font-subheading);
 }
-.hero h2 {font-size: 50px;}
+.hero h1 {font-size: 50px;}
 .hero p {margin-block: var(--xs) var(--h);}
 .hero a {color: var(--white);}
 
@@ -270,8 +270,9 @@ nav a[aria-current="true"] {
     border-radius: 50%;
 }
 
-.team h4 {
+.team h3 {
     margin-bottom: var(--xs);
+    font-size: var(--font-body-copy);
 }
 
 .team a {
@@ -362,7 +363,7 @@ nav a[aria-current="true"] {
 @media only screen and (max-width: 400px) {
     /* Hero Section */
     .hero .hero-text {flex-basis: 220px !important;}
-    .hero h2 {font-size: calc(var(--font-subheading) + 4px) !important;}
+    .hero h1 {font-size: calc(var(--font-subheading) + 4px) !important;}
     .hero p {font-size: var(--font-caption);}
 
     /* Features Section */
@@ -466,7 +467,7 @@ nav a[aria-current="true"] {
         font-size: initial;
         margin: 0;
     }
-    .hero h2 {font-size: var(--font-h2);}
+    .hero h1 {font-size: var(--font-h2);}
 
 
 
