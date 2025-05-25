@@ -7,11 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#1e3a8a">
 
-  <meta name="description" content="TeamSpark is a remote collaboration platform that helps teams connect, communicate, and build better products together.">
+  <meta name="description"
+    content="TeamSpark is a remote collaboration platform that helps teams connect, communicate, and build better products together.">
 
   <!-- Open Graph (Facebook, LinkedIn, etc.) -->
   <meta property="og:title" content="TeamSpark - Remote Collaboration Made Easy">
-  <meta property="og:description" content="TeamSpark connects your remote team with real-time chat, project boards, and secure video meetings.">
+  <meta property="og:description"
+    content="TeamSpark connects your remote team with real-time chat, project boards, and secure video meetings.">
   <meta property="og:image" content="https://teamsparkwebsite.netlify.app/assets/images/Other/og-banner.webp">
   <meta property="og:url" content="https://teamsparkwebsite.netlify.app">
   <meta property="og:type" content="website">
@@ -39,6 +41,38 @@
   <link rel="icon" href="assets/icons/android-chrome-512x512.png" type="image/png">
 
   <title>TeamSpark - Remote Collaboration Made Easy</title>
+
+  <!--JSON-LD-->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TeamSpark",
+      "url": "https://teamsparkwebsite.netlify.app",
+      "logo": "https://teamsparkwebsite.netlify.app/assets/images/og-image.jpg",
+      "sameAs": [
+        "https://linkedin.com/company/teamspark",
+        "https://facebook.com/teamspark",
+        "https://instagram.com/teamspark"
+      ],
+      "description": "TeamSpark helps remote teams collaborate through real-time chat, project boards, and secure video meetings."
+    }
+  </script>
+
+  <!--Website Schema-->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "TeamSpark",
+      "url": "https://teamsparkwebsite.netlify.app",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://teamsparkwebsite.netlify.app/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
 </head>
 
 <body>
