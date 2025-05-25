@@ -4,7 +4,7 @@ A responsive landing page built for the fictional remote team collaboration app 
 
 ## 📸 Preview
 
-![Preview](./assets/images/Other/TeamSpark%20Website.png "Preview")
+![Preview](./assets/images/Other/TeamSpark_Website.jpg "Preview")
 
 ---
 
