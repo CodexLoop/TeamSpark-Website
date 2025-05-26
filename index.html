@@ -42,20 +42,49 @@
 
   <title>TeamSpark - Remote Collaboration Made Easy</title>
 
-  <!--JSON-LD-->
+  <!--JSON-LD Organization Schema-->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "TeamSpark",
       "url": "https://teamsparkwebsite.netlify.app",
-      "logo": "https://teamsparkwebsite.netlify.app/assets/images/og-image.jpg",
+      "logo": "https://teamsparkwebsite.netlify.app/assets/icons/android-chrome-512x512.jpg",
       "sameAs": [
         "https://linkedin.com/company/teamspark",
         "https://facebook.com/teamspark",
         "https://instagram.com/teamspark"
       ],
       "description": "TeamSpark helps remote teams collaborate through real-time chat, project boards, and secure video meetings."
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Mnqobi Thusi",
+          "jobTitle": "Project Manager",
+          "url": "https://mnqobithusi.dev",
+          "sameAs": "https://linkedin.com/in/mnqobi-thusi/"
+        },
+        {
+          "@type": "Person",
+          "name": "Jane Doe",
+          "jobTitle": "Product Designer"
+        },
+        {
+          "@type": "Person",
+          "name": "James Bond",
+          "jobTitle": "UI/UX Developer"
+        },
+        {
+          "@type": "Person",
+          "name": "John Smith",
+          "jobTitle": "SEO Specialist"
+        }
+      ]
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "url": "https://teamsparkwebsite.netlify.app/#contact"
+      }
     }
   </script>
 
@@ -71,6 +100,35 @@
         "target": "https://teamsparkwebsite.netlify.app/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
+    }
+  </script>
+
+  <!--ItemsList Schema-->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "TeamSpark Features",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Real-Time Chat",
+          "description": "Communicate instantly with your team no matter where they are."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Project Boards",
+          "description": "Organize tasks and track progress with easy-to-use boards."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Video Meetings",
+          "description": "Host secure video calls with your entire team, with one click."
+        }
+      ]
     }
   </script>
 </head>
