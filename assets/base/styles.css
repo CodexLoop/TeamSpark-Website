@@ -315,7 +315,7 @@ nav a[aria-current="true"] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 50dvh;
+    height: 50dvh;
     padding-block: var(--h) var(--s);
 }
 
