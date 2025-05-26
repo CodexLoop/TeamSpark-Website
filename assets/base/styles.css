@@ -502,7 +502,6 @@ nav a[aria-current="true"] {
 }
 
 /* Animations!!! */
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -527,7 +526,6 @@ nav a[aria-current="true"] {
 }
 
 /* Reduced Motion :) */
-
 @media (prefers-reduced-motion: reduce) {
     * {
         animation: none !important;
@@ -537,4 +535,14 @@ nav a[aria-current="true"] {
 
 @media (prefers-color-scheme: dark) {
     .social-icon {fill: var(--light-gray);}
+}
+
+/* Diasable Animations for Mobile */
+@media only screen and (max-width: 1024px) {
+    .animate-fade,
+    .visible {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
 }
