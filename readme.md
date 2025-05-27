@@ -1,85 +1,52 @@
-# TeamSpark Landing Page 🚀
+# 🚀 TeamSpark — Remote Collaboration Made Easy
 
-A responsive landing page built for the fictional remote team collaboration app **TeamSpark**. This project is inspired by Frontend Mentor's "Meet Landing Page" challenge.
+**TeamSpark** is a fully responsive, accessible landing page built using semantic HTML, vanilla CSS, and JavaScript. The site is designed to promote a fictional remote collaboration platform, showcasing clean UI, animation, and SEO best practices — all without frameworks or external UI libraries.
 
-## 📸 Preview
-
-![Preview](./assets/images/Other/TeamSpark_Website.jpg "Preview")
-
----
-
-## 📁 Project Structure
-
-```
-/
-├── index.html         # Main HTML file
-├── styles.css         # Main stylesheet
-├── assets/            # Placeholder for images and icons
-└── README.md          # Project info and usage guide
-```
+🔗 [Live Demo](https://teamsparkwebsite.netlify.app)  
+📖 [Full Case Study](https://mnqobithusi.dev/blog/teamspark-case-study) *(Update with actual blog link)*  
+📸 [Screenshots & Assets](./assets/images)
 
 ---
 
-## 🎯 Features
+# 📷 Preview!
+![Preview](./assets/images/Other/TeamSpark_Website.png "Preview")]
 
-* Mobile-first responsive layout
-* Hero section with call-to-action
-* Features with icons and text
-* Meet the team cards
-* Footer with navigation links
-* Clean, accessible semantic HTML
+## ✨ Features
 
----
-
-## 💡 Technologies Used
-
-* HTML5
-* CSS3 (or Tailwind/Bootstrap if preferred)
-* Responsive design (flexbox or grid)
+- Accessible mobile-first navigation with scroll-tracked active states
+- Scroll-triggered animations (desktop only)
+- ARIA-enhanced structure and keyboard navigation
+- Lazy-loaded images and performance-tuned animations
+- Semantic HTML5 and custom CSS variables
+- Open Graph tags + Schema.org structured data (Organization, Person, ItemList)
+- Lighthouse Scores: **Performance 99 • Accessibility 92 • SEO 100 • Best Practices 100**
 
 ---
 
-## 🧩 Optional Enhancements
+## 🔧 Technologies Used
 
-* Add animations with CSS or JS
-* Implement dark mode toggle
-* Use a CSS preprocessor (SASS/SCSS)
-* Connect to a form handler like Formspree for contact
-
----
-
-## 🚀 Getting Started
-
-To run this project locally:
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/teamspark-landing-page.git
-```
-
-2. Open `index.html` in your browser.
+- HTML5 + CSS3 (custom properties, flexbox, grid)
+- Vanilla JavaScript (modular scroll + nav logic)
+- Inline SVGs (no external icon libraries)
+- Netlify for static deployment and caching
+- Manual optimization (minification, headers, lazy loading)
 
 ---
 
-## 🌐 Deployment
+## 🧠 What I Learned
 
-You can deploy this project using:
-
-* GitHub Pages
-* Netlify
-* Vercel
-
----
-
-## 🙌 Credits
-
-Icons by [Heroicons](https://heroicons.com) or [FontAwesome](https://fontawesome.com)
-Photos by [Unsplash](https://unsplash.com)
-Inspired by [Frontend Mentor](https://www.frontendmentor.io)
+- Hands-on ARIA + accessibility implementation
+- SEO and structured data with JSON-LD
+- Layout building using modern grid/flex techniques
+- Manual performance tuning without relying on frameworks
 
 ---
 
-## 📄 License
+## 💬 Author
 
-This project is for learning purposes only. No license necessary.
+Made with care by [Mnqobi Thusi](https://mnqobithusi.dev)  
+Connect on [LinkedIn](https://linkedin.com/in/mnqobi-thusi)
+
+---
+
+> 🚀 *Want to fork this? It’s perfect as a lightweight SaaS starter page.*
