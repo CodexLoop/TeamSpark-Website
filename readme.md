@@ -9,7 +9,7 @@
 ---
 
 # 📷 Preview!
-![Preview](./assets/images/Other/TeamSpark_Website.png "Preview")]
+![Preview](./assets/images/Other/TeamSpark_Website.png "Preview")
 
 ## ✨ Features
 
