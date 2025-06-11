@@ -313,7 +313,7 @@ nav a[aria-current="true"] {
 .cta {
     display: flex;
     align-content: center;
-    background-color: var(--white);
+    background-color: var(--light-gray);
     min-height: 45dvh;
 }
 
@@ -321,7 +321,7 @@ nav a[aria-current="true"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--light-gray);
+    background-color: var(--white);
     border-radius: 12px;
     padding: .85rem 1rem;
     margin: auto;
