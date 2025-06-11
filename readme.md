@@ -3,7 +3,7 @@
 **TeamSpark** is a fully responsive, accessible landing page built using semantic HTML, vanilla CSS, and JavaScript. The site is designed to promote a fictional remote collaboration platform, showcasing clean UI, animation, and SEO best practices — all without frameworks or external UI libraries.
 
 🔗 [Live Demo](https://teamsparkwebsite.netlify.app)  
-📖 [Full Case Study](https://mnqobithusi.dev/blog/teamspark-case-study) *(Update with actual blog link)*  
+📖 [Full Case Study](https://mnqobithusi.dev/teamspark-blogpost.html/)  
 📸 [Screenshots & Assets](./assets/images)
 
 ---
