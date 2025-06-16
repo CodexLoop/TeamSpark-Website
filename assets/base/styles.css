@@ -230,6 +230,7 @@ nav a[aria-current="true"] {
     gap: var(--l) var(--h);
     text-align: center;
     padding-top: var(--h);
+    text-align: center;
 }
 
 .features h2 {
